@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Nunito&family=Poppins:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: white;
+}
+.navbar{
+    padding: 10px;
+}
+.navbar > p{
+    text-align: left;
+}
+.navbar_left > p{
+    font-weight: bold;
+    font-size: 20px;
+}   
+.navbar_center{
+   display: flex;
+   cursor: pointer;
+   justify-content: center;
+   padding-right: 30px;
+   font-size: 25px;
+}
+.navbar_center--active{
+   text-decoration: none;
+}
+.navbar_center > a{
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: black;
+    
+}
+.navbar_links{
+    padding-right: 30px;
+}
+.navbar_links:hover{
+  text-decoration-thickness: 2px;
+ }
+ .navbar_right{
+     display: flex;
+     justify-content: right;
+ }
+ .navbar_right > div{
+     padding-right: 15px;
+     font-size: 16px;
+     cursor: pointer;
+ }
+ .navbar_right > div > a{
+     text-decoration: none;
+     color: #282828;
+ }
