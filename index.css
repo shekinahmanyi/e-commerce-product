@@ -11,49 +11,76 @@ body{
     background-color: white;
 }
 .navbar{
-    padding: 10px;
-}
-.navbar > p{
-    text-align: left;
-}
-.navbar_left > p{
-    font-weight: bold;
-    font-size: 20px;
-}   
-.navbar_center{
-   display: flex;
-   cursor: pointer;
-   justify-content: center;
-   padding-right: 30px;
-   font-size: 25px;
-}
-.navbar_center--active{
-   text-decoration: none;
-}
-.navbar_center > a{
-    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    color: black;
+    padding: 15px;
+    margin:20px;
+    border-bottom: 1px solid #6e788121;
     
 }
-.navbar_links{
-    padding-right: 30px;
+.navbar_logo {
+    display: flex;
+    align-items: center;
+  }
+.navbar_logo > svg {
+    margin-left: 120px;
 }
-.navbar_links:hover{
-  text-decoration-thickness: 2px;
- }
- .navbar_right{
-     display: flex;
-     justify-content: right;
- }
- .navbar_right > div{
-     padding-right: 15px;
-     font-size: 16px;
-     cursor: pointer;
- }
- .navbar_right > div > a{
-     text-decoration: none;
-     color: #282828;
- }
+
+.navbar_items{
+    margin-left:60px;
+    
+}
+
+.navbar_items > a {
+    justify-content: space-between;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navbar_right{
+    margin-left: auto;
+    cursor: pointer;
+    margin-right: 120px;
+  
+}
+.navbar_right > svg {
+    align-items: center;
+}
+.avatar{
+    max-width: 100%;
+    height: auto;
+    width: 30%;
+}
+.section_1{
+    margin-top:80px;
+    margin-bottom:50px;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+}
+.section_1 > img {
+  border-radius:15px;
+  padding: 5px;
+  width: 30%;
+}
+
+
+/* Media query for small screens */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .navbar_items {
+        margin-left: 0; /* Remove left margin on small screens */
+        margin-top: 10px; /* Add top margin for spacing */
+        display: none;
+    }
+
+    .navbar_right {
+        margin-left: 0; /* Remove left margin on small screens */
+        
+    }
+}
