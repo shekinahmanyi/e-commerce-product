@@ -47,16 +47,17 @@ body{
     justify-content: space-between;
     padding: 10px;
     text-decoration: none;
+    color: var(--dark-grayish-blue);
 }
 
 .navbar_right{
     margin-left: auto;
     cursor: pointer;
-    margin-right: 120px;
+    /* margin-right: 120px; */
   
 }
 .navbar_right > svg {
-    align-items: center;
+    font-size: 16px;
 }
 .avatar{
     max-width: 100%;
@@ -91,33 +92,47 @@ cursor: pointer;
 border-radius:10px;
 }
 
+.filter-images img.selected {
+    border: 2px solid var(--primary-color); /* Adjust the border color as needed */
+  }
+
 
 /* Media query for small screens */
 @media only screen and (max-width: 600px) {
     .navbar {
-        flex-direction:column; /* Stack items vertically on small screens */
+        display: flex; /* Stack items vertically on small screens */
         align-items: flex-start; /* Align items to the start */
     }
     .navbar_logo {
-        margin: 0;
-        padding: 0;
-        align-items: center;
+       margin: 0px;
+
       }
+      .navbar_logo > svg {
+        margin-left: 0px
+    }
 
     .navbar_items {
-        margin-left: 0; /* Remove left margin on small screens */
-        margin-top: 10px; /* Add top margin for spacing */
         display: none;
     }
 
     .navbar_right {
-        margin-left: 0; /* Remove left margin on small screens */
+        margin-left: 100px;
+        display: flex;
         
+    }
+    .avatar{
+        max-width: 100%;
+        height: auto;
+        width: 40%;
+        margin-left: 20px;
+    }
+    .section_1{
+       margin: 0;
+       align-items: center;
     }
     .section_1 img {
         border-radius:15px;
-        padding: 0px;
-        max-width: 100%;
+        object-fit: cover;
         width: 100%;
       }
       .filter-images {
