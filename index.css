@@ -26,8 +26,6 @@ body {
   align-items: center;
   padding: 10px;
   margin: 10px 90px;
-  /* margin-left: 120px;
-  margin-right: 90px; */
   border-bottom: 1px solid var(--gray-blue);
 }
 .navbar_logo {
