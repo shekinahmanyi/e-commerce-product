@@ -32,9 +32,6 @@ body {
   display: flex;
   align-items: center;
 }
-/* .navbar_logo > svg {
-  margin-left: 120px;
-} */
 
 .navbar_items {
   margin-left: 60px;
@@ -48,10 +45,8 @@ body {
 }
 
 .navbar_right {
-  /* margin-left:750px; */
   cursor: pointer;
   margin-left: auto;
-  /* margin-right: 120px; */
 }
 .navbar_right > svg {
   font-size: 16px;
@@ -109,48 +104,48 @@ body {
   margin-bottom: 10px;
 }
 .cancel p {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 .values {
-    display: flex;
-    cursor: pointer;
-    padding: 10px 0px;
+  display: flex;
+  cursor: pointer;
+  padding: 10px 0px;
 }
 .values button {
-    border: 0;
-    width: 100%;
-    margin-left: 20px;
-    text-align: center;
-    align-items: center;
-    padding: 0px 50px;
-    background-color: var(--primary-color);
-    color: var(--white);
-    font-family: "Kumbh Sans", sans-serif;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 18px;
+  border: 0;
+  width: 100%;
+  margin-left: 20px;
+  text-align: center;
+  align-items: center;
+  padding: 0px 50px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-family: "Kumbh Sans", sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
 }
 .counter {
-    display: flex;
-    background-color: var(--light-grayish-blue);
-    padding: 10px;
-    font-weight: bold;
-    font-size: 25px;
-    align-items: center;
-    border-radius: 7px;
-    margin-top: 10px;
-    width: 100%;
+  display: flex;
+  background-color: var(--light-grayish-blue);
+  padding: 10px;
+  font-weight: bold;
+  font-size: 25px;
+  align-items: center;
+  border-radius: 7px;
+  margin-top: 10px;
+  width: 100%;
 }
-.counter h3{
-    color: var(--primary-color);
-    padding-right: 65px;
-    font-size: 25px;
+.counter h3 {
+  color: var(--primary-color);
+  padding-right: 65px;
+  font-size: 25px;
 }
 
 .counter h4 {
-    color: var(--primary-color);
-    padding-left: 70px;
-    font-size: 25px;
+  color: var(--primary-color);
+  padding-left: 70px;
+  font-size: 25px;
 }
 
 .filter-images {
@@ -198,7 +193,6 @@ body {
     max-width: 100%;
     height: auto;
     width: 30%;
-   
   }
   .main {
     margin: 0;
@@ -237,7 +231,7 @@ body {
   .cancel p {
     display: flex;
   }
-  .values{
+  .values {
     display: block;
   }
   .values button {
@@ -246,7 +240,7 @@ body {
     margin-top: 10px;
     width: 80%;
   }
-  .counter{
+  .counter {
     margin-left: 20px;
     justify-content: center;
     width: 80%;
